@@ -1,0 +1,26 @@
+
+{
+    "artfile": "assets/camel_walk.png",
+    "assets": {
+        "CAMEL": {
+            "walk_0" : {
+                "coords": [0,0,144,144]
+            },
+            "walk_1" : {
+                "coords": [144,0,144,144]
+            },
+            "walk_2" : {
+                "coords": [288,0,144,144]
+            },
+            "walk_3" : {
+                "coords": [432,0,144,144]
+            },
+            "walk_4" : {
+                "coords": [576,0,144,144]
+            },
+            "walk_5" : {
+                "coords": [720,0,144,144]
+            }
+        }
+    }
+}
