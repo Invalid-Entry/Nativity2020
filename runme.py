@@ -31,9 +31,9 @@ spritedex = Spritedex()
 
 objects = []
 
-objects.append(Camel(spritedex, (220, 220), 0))
-objects.append(Camel(spritedex, (120, 220), 4))
-objects.append(Camel(spritedex, (80, 220), 2))
+objects.append(Camel(spritedex, (220, 220), 0, "KING_ONE"))
+objects.append(Camel(spritedex, (120, 220), 4, "KING_TWO"))
+objects.append(Camel(spritedex, (80, 220), 2, "KING_THREE"))
 
 while alive:
     for event in pygame.event.get():
