@@ -8,6 +8,7 @@ from pygame.time import Clock
 from utils.spritedex import Spritedex
 from elements.camel import Camel
 from elements.parallax import Background
+from elements.star import Star
 
 pygame.init()
 
@@ -38,8 +39,9 @@ objects = []
 # Background("assets/BG_02/BG_02.png", 17))
 
 
-objects.append(Background("assets/BG_04/Layers/Sky.png", 2))
-objects.append(Background("assets/BG_04/Layers/BG_Decor.png", 4))
+objects.append(Background("assets/BG_04/Layers/Sky.png", 1))
+objects.append(Star(spritedex, (width - 200, 30)))
+#objects.append(Background("assets/BG_04/Layers/BG_Decor.png", 4))
 objects.append(Background("assets/BG_04/Layers/Middle_Decor.png", 8))
 objects.append(Background("assets/BG_04/Layers/Foreground.png", 10))
 objects.append(Background("assets/BG_04/Layers/Ground_01.png", 17))
