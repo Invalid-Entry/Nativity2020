@@ -1,3 +1,12 @@
 venv/
-/.DS_Store
+*.DS_Store
 __pycache__
+
+# Assets that have copyright / licenses can not be committed to this open repo:
+
+/assets/star.png
+/assets/BG_01
+/assets/BG_02
+/assets/BG_03
+/assets/BG_04
+/assets/camel_walk.png
