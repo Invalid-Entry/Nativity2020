@@ -19,9 +19,9 @@ class Star():
         if "star" not in self._spritedex.sheets:
             self._spritedex.load_sheet("assets/star.json", "star")
 
-        
 
-    def render(self, surface):
+
+    def render(self, surface, wind):
         
         if self._progress:
             self._animation_position += 1

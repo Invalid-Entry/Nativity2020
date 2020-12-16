@@ -22,7 +22,7 @@ class Camel():
             self._spritedex.load_sheet("assets/kings.json", "kings")
         
 
-    def render(self, surface):
+    def render(self, surface, wind):
 
         self._animation_position += 1
         if self._animation_position > 5:
