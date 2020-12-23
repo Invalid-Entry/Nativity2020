@@ -99,6 +99,29 @@ class Background():
 
                 rect(self.sub_surf, self._snow_config.flake_color, (flake[0], flake[1], self._snow_config.flake_size, self._snow_config.flake_size))
 
+            for i in range(self._width):
+                if self._snow_height[i] < self._snow_baseline[i]:
+
+                    if i == 0:
+                        if self._snow_height[i] < self._snow_height[self._width-1]-2:
+                            self._snow_height[i] += 1
+                            self._snow_height[i-1] -= 1
+                    else:
+                        if self._snow_height[i] < self._snow_height[i-1]-2:
+                            self._snow_height[i] += 1
+                            self._snow_height[i-1] -= 1
+                    if i == self._width -1:
+                        if self._snow_height[i] < self._snow_height[0]-2:
+                            self._snow_height[i] += 1
+                            self._snow_height[i-1] -= 1
+                    else:
+                        if self._snow_height[i] < self._snow_height[i+1]-2:
+                            self._snow_height[i] += 1
+                            self._snow_height[i-1] -= 1
+
+                
+                   
+
             for snow_position in range(self._width):
                 line(self.sub_surf, self._snow_config.flake_color, (snow_position, self._snow_height[snow_position]), (snow_position, self._snow_baseline[snow_position]))
 

@@ -34,10 +34,10 @@ spritedex = Spritedex()
 # Setup of Objects
 objects = []
 
-BGSnowConfig = SnowConfig(40, 1, (128,128,128,255))
-FGSnowConfig = SnowConfig(30, 2, (180, 180, 180, 250))
-GroundSnowConfig = SnowConfig(20, 3, (230, 230, 230, 250))
-GroundSnowConfig2 = SnowConfig(10, 3, (255, 255, 255, 245))
+BGSnowConfig = SnowConfig(80, 1, (128,128,128,255))
+FGSnowConfig = SnowConfig(60, 2, (180, 180, 180, 250))
+GroundSnowConfig = SnowConfig(40, 3, (230, 230, 230, 250))
+GroundSnowConfig2 = SnowConfig(20, 3, (255, 255, 255, 245))
 
 objects.append(Background("assets/BG_04/Layers/Sky.png", 1))
 objects.append(Star(spritedex, (width - 200, 30)))
